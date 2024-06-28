@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>Soundboard NFP</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+    button {
+    width: 100%; height: 200px }
+    </style>
+  </head>
+  <body>
+    <header></header>
+    <main>
+
+    <button onclick="new Audio('bonjour.mp3').play()">
+Bonjour
+</button>
+
+<button onclick="random()">
+Votez NFP
+</button>
+
+<button onclick="new Audio('aurevoir.mp3').play()">
+Au revoir
+</button>
+
+</main>
+    <footer></footer>
+
+    <script>
+    const random = () => {
+        const i = Math.floor(Math.random() * 23);
+        new Audio(`slogan${i}.mp3`).play()
+    }
+    </script>
+  </body>
+</html>
